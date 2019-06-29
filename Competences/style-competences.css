@@ -1,0 +1,612 @@
+html
+{
+    height:100%;
+    overflow-y:hidden;
+
+}
+
+body
+{
+    display:flex;
+    flex-direction:column;
+    align-content :center;
+    justify-content: center;
+    min-height:100%;
+}
+
+
+header
+{
+    border-style:solid;
+    display:none;
+    border-color:#707070;
+    border-width: 0 0 1px 0;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:20px;
+    height:128px;
+    text-align:right;
+    z-index:1;
+    background-color: white;
+}
+
+
+
+
+#blaze
+{
+    text-align:left;
+    padding-top:30px;
+    margin-bottom:-40px;
+    margin-left:40px;
+}
+
+
+#lien
+{
+    
+    /* margin-right:40px; */
+    margin: auto;
+    margin-right:0px;
+    margin-top:17px;
+    text-align:right;
+    
+}
+
+#lien a:link, a:visited
+{
+    color:black;
+    text-decoration: none;
+}
+
+#header-button
+{
+    margin-bottom:-20px;
+}
+
+.fermer
+{
+    display:block;
+    background-color:white;
+    border-color:black;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:20px;
+    height:40px;
+    white-space: nowrap;
+    cursor:pointer;
+    border-radius:20px;
+    width:102px;
+}
+
+ion-icon
+{
+   font-size:20px; 
+   vertical-align: middle;
+   margin-bottom: 3px;
+}
+
+
+#menu-button
+{
+    height: 73px;
+    width: 132px;
+    background-color: transparent;
+    display:block;
+    position:relative;
+    bottom:150px;
+    /* right:5em; */
+    border-width:0;
+    text-align: center;
+    margin:auto;
+    
+}
+
+#menu-button:hover
+{
+    cursor:pointer;
+}
+
+#contour-button
+{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width: 0;
+    height:0;
+    border-top : 71px solid black;
+    border-right : 70px solid transparent;
+    border-left : 70px solid transparent;
+    
+    
+    
+}
+
+#contour-button2
+{
+    display:block;
+    position:relative;
+    bottom:69px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 0;
+    height:0;
+    border-top : 66px solid white;
+    border-right : 66px solid transparent;
+    border-left : 66px solid transparent;
+
+    
+    
+    
+}
+
+#div-menu-button
+{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:71px;
+    margin: 0 auto;
+    /* text-align:center; */
+    margin-top:50px;
+    
+}
+
+#div-menu-button:hover
+{
+    cursor: pointer;
+}
+
+.menu-link
+{
+    margin-right:40px;
+   
+}
+
+/* 
+#conteneur-competences div 
+{
+    width:200px;
+    height:15px;
+} */
+
+div#competence1
+{
+    text-align: center;
+}
+
+div#competence2
+{
+    text-align: center;
+}
+
+div#competence3
+{
+    text-align: center;
+}
+
+div#competence4
+{
+    text-align: center;
+}
+
+#competence1 
+{
+    display:block;
+    width:200px;
+    height:200px;
+    position: absolute;
+    top:140px;
+    left:100px;
+}
+
+
+  
+  .progress {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .progress > .inner {
+    position: absolute;
+    color: blue; 
+    
+  }
+  
+  .progress > svg {
+    height: 100%;
+    display: block;
+  }
+
+#competence2
+{
+    width:200px;
+    height:200px;
+    position: absolute;
+    top:140px;
+    
+
+    right:100px;
+}
+
+#progress2 > .inner {
+    position: absolute;
+    color: blue; 
+    
+  }
+
+#competence3
+{
+    width:200px;
+    height:200px;
+    position: absolute;
+    top:500px;
+  
+    left:100px;
+}
+
+#progress3 > .inner {
+    position: absolute;
+    color: blue; 
+    
+  }
+
+#competence4
+{
+    
+    width:200px;
+    height:200px;
+    position: absolute;
+    top:500px;
+    right:100px;
+}
+
+#progress4 > .inner {
+    position: absolute;
+    color: blue; 
+    
+}
+
+.niveau
+{
+    display:none;
+}
+
+#conteneur-cv
+{
+    text-align:center;
+}
+
+#cv-button
+{
+    width:240px;
+    height:80px;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 3px;
+    background-color:white;
+}
+
+#cv-button:hover
+{
+    cursor: pointer;
+}
+#buttons-contener
+{
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    
+    bottom:50px;
+    left:50%;
+    transform: translateX(-50%);
+    margin: 50px auto 0 auto;
+
+}
+
+#contact-button:hover
+{
+    cursor:pointer;
+}
+
+#retour-button:hover
+{
+    cursor:pointer;
+}
+
+#contact-button
+{
+    margin-bottom:40px;
+    width:240px;
+    height:80px;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 3px;
+    background-color:white;
+}
+
+
+
+#retour-button
+{
+    border-width:0px;
+    background-color: transparent
+}
+
+/* @media screen and (max-width : 1159px)
+{
+    #conteneur-competences img 
+{
+    width:360px;
+    height:360px;
+}
+
+
+    #conteneur-competences 
+{
+    display:grid;
+    
+    
+}
+
+#competence1
+{
+    width:360px;
+    height:360px;
+
+    
+}
+
+#competence2
+{
+    display: none;
+    width:360px;
+    height:360px;
+    position: absolute;
+    top:20px;
+    left:10%;
+}
+
+#competence3
+{
+    display: none;
+    width:360px;
+    height:360px;
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+
+#competence4
+{
+    display: none;
+    width:360px;
+    height:360px;
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+
+#competence5
+{
+    display: none;
+    width:360px;
+    height:360px;
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+
+} */
+
+/* --- Responsivité petit écran --- */
+
+@media screen and (max-width : 960px)
+{
+    header
+    {
+        
+        border-style:solid;
+        display:none;
+        border-color:#707070;
+        border-width: 0 0 1px 0;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        font-size:20px;
+        text-align:center;
+        height:280px;
+        z-index:1;
+        justify-content: space-between;
+        background-color: white;
+        
+        
+        
+        
+    }
+
+    #header-button
+    {
+        border:none;
+        background-color: transparent;
+        text-align: center;
+        margin:auto;
+    }
+    #lien
+    {
+        margin:auto;
+        text-align:center;
+        margin-top:40px;    
+           
+    }
+    #blaze
+    {
+        margin:0px auto 0px auto;
+        padding: 35px auto 0px auto;
+        text-align:center;
+        
+    }
+
+    /* #lien div
+    {
+        
+        margin:0 auto 0 auto; 
+    } */
+/*    
+    header div 
+    {
+        height:50px;
+        margin:-10px auto -10px auto;
+    } */
+
+    .menu-link
+    {
+        margin-top:15px;
+        margin-right:0px;
+    }
+    #header-button
+    {
+        /* margin: 25px auto -15px auto; */
+        margin-top:25px;
+    }
+
+    #apropos
+    {
+        
+        display:block;
+        position:relative;
+        text-align:center;
+        bottom:0;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        text-decoration:underline;
+        
+    }
+
+    #nom
+    {
+        padding-top: 93px;
+    }
+    
+    body
+    {
+        margin: 0px;
+    }
+
+    html
+    {
+        overflow-y: initial;
+    }
+
+        #competence1 
+    {
+        
+        display:block;
+        
+        position: absolute;
+        top:170px;
+        transform:translateX(-50%);
+        left:50%;
+        
+    }
+
+    #competence2
+    {
+        display:block;
+        position: absolute;
+        top:436px;
+        transform:translateX(-50%);
+        left:50%;
+    }
+
+    #competence3
+    {
+        
+        position: absolute;
+        top:702px;
+        transform:translatex(-50%);
+        left:50%;
+    }
+
+    #competence4
+    {
+        
+        position: absolute;
+        top:968px;
+        transform:translatex(-50%);
+        left:50%;
+    }
+
+    #cv-button
+    {
+        
+        width:240px;
+        height:80px;
+        border-color: black;
+        border-width: 2px;
+        border-radius: 3px;
+        background-color:white;
+        margin-top: 1234px;
+    }
+
+    #buttons-contener
+    {
+        top:1400px;
+        margin-left:auto;
+        margin-right:auto;
+        height:200px;
+
+    }
+
+    #contact-button
+    {
+        width:256px;
+        height:80px;
+        border-width: 2px;
+        border-color:black;
+    }
+
+    #footer-button
+    {
+        border:none;
+        background-color: transparent;
+        text-align: center;
+        margin-top:-26px;
+        
+    }
+
+    footer
+    {
+        position: relative;
+        width: 100%;
+        height:75px;
+        margin-top:30px;
+    }
+
+    #mentions
+    {
+        position:initial;
+    }
+
+    #politique
+    {
+        position:initial;
+        margin-top:-34px;
+    }
+   
+}
