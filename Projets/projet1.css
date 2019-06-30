@@ -1,8 +1,12 @@
 html
 {
+    display:none;
     height:100%;
     overflow-y:hidden;
-
+    background-image: url(logo/logo1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
 }
 
 body

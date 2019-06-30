@@ -1,7 +1,9 @@
 html
 {
+    display:none;
     height:100%;
     overflow-y:hidden;
+    
 
 }
 

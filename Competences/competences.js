@@ -1,5 +1,5 @@
 var larg=document.body.clientWidth;
-
+$('html').fadeIn(1000);
 
 
 var result_1= parseInt(document.getElementById("niveau_1").textContent);
@@ -18,13 +18,25 @@ var niveau_4=result_4*20/100;
 document.getElementById("retour-button").onclick=function() {clickFunction()};
 function clickFunction()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(retour_function, 1100);
+    function retour_function()
+    {
     window.location.href="../Projets/projets.php"
+    }
 }
 
 document.getElementById("contact-button").onclick=function() {clickFunction2()};
 function clickFunction2()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(contact_function, 1100);
+    function contact_function()
+    {
     window.location.href="../Contact/contact.php"
+    }
 }
 
 

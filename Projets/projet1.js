@@ -1,25 +1,50 @@
+$('html').fadeIn(1000);
 document.getElementById("retour-button").onclick=function() {clickFunction()};
 function clickFunction()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(retour_function, 1100);
+    function retour_function()
+    {
     window.location.href="projets.php"
+    }
 }
 
 document.getElementById("competences-button").onclick=function() {clickFunction2()};
 function clickFunction2()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(competences_function, 1100);
+    function competences_function()
+    {
     window.location.href="/Competences/competences.php"
+    }
 }
 
 document.getElementById("left").onclick=function() {clickLeft()};
 function clickLeft()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(left_function, 1100);
+    function left_function()
+    {
     window.location.href="projet3.php"
+    }
 }
 
 document.getElementById("right").onclick=function() {clickRight()};
 function clickRight()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(right_function, 1100);
+    function right_function()
+    {
     window.location.href="projet2.php"
+    }
 }
 
 

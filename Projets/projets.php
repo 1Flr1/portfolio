@@ -10,6 +10,46 @@
 
 </head>
     <body>
+
+        <?php
+
+            session_start();
+
+            $x=0;
+            ini_set('error_reporting', E_ALL);
+            ini_set('display_errors', TRUE);
+            require_once('../db.php');
+            $rqtNmbreProjets='SELECT count(id) FROM projets';
+            $stmtNmbreProjets=$pdo->prepare($rqtNmbreProjets);
+            $rqtProjets='SELECT logo FROM projets WHERE id=?';
+            $stmtProjets=$pdo->prepare($rqtProjets);
+            $rqtNom='SELECT nom FROM projets WHERE id=?';
+            $stmtNom=$pdo->prepare($rqtNom);
+
+            $stmtNmbreProjets->execute();
+            $nmbreProjets=$stmtNmbreProjets->fetch();
+
+
+            $nmbre=$nmbreProjets['count(id)'];
+
+
+            while ($x<=$nmbre) 
+                {
+                    $stmtProjets->execute([$x]);
+                    $result[$x]=$stmtProjets->fetch();
+                    
+                    $stmtNom->execute([$x]);
+                    $nom[$x]=$stmtNom->fetch();
+                    
+                    $x=$x+1;
+                    
+                }
+
+
+
+
+         ?>
+
         <header name = "header">
             
             <p id="blaze">
@@ -45,13 +85,13 @@
         <div id="conteneur-projets">
 
             <div id="projet1">
-                <img src="images/projet.png" alt="Image de projet">
+                <img src="<?php echo $result[1]['logo'];?>" alt="Image de projet">
             </div>
             <div id="projet2">
-                <img src="images/projet.png" alt="Image de projet">
+                <img src="<?php echo $result[2]['logo'];?>" alt="Image de projet">
             </div>
             <div id="projet3">
-                <img src="images/projet.png" alt="Image de projet">
+                <img src="<?php echo $result[3]['logo'];?>" alt="Image de projet">
             </div>
             
         </div>

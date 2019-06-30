@@ -1,9 +1,15 @@
-
+$('html').fadeIn(1000);
 
 document.getElementById("accueil-button").onclick=function() {clickFunction()};
 function clickFunction()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(accueil_function, 1100);
+    function accueil_function()
+    {
     window.location.href="../index.php"
+    }
 }
 
 

@@ -1,9 +1,23 @@
 
+$('html').fadeIn(1000);
 
 document.getElementById("projets-button").onclick=function() {clickFunction()};
 function clickFunction()
 {
-    window.location.href="Projets/projets.php"
+    
+    $('html').fadeOut(1000);
+
+    window.setTimeout(click_function, 1100);
+    function click_function()
+    {
+
+        window.location.href="Projets/projets.php";
+    }
+    
+
+    
+
+    
 }
 
 

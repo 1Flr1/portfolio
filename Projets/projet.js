@@ -1,35 +1,66 @@
 var larg=document.body.clientWidth;
 
+$('html').fadeIn(1000);
 
 
 document.getElementById("retour-button").onclick=function() {clickFunction()};
 function clickFunction()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(retour_function, 1100);
+    function retour_function()
+    {
     window.location.href="../index.php"
+    }
 }
 
 document.getElementById("competences-button").onclick=function() {clickFunction2()};
 function clickFunction2()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(competences_function, 1100);
+    function competences_function()
+    {
     window.location.href="../Competences/competences.php"
+    }
 }
 
 document.getElementById("projet1").onclick=function() {clickProjet1()};
 function clickProjet1()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(click_function1, 1100);
+    function click_function1()
+    {
     window.location.href="projet1.php"
+    }
 }
 
 document.getElementById("projet2").onclick=function() {clickProjet2()};
 function clickProjet2()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(click_function2, 1100);
+    function click_function2()
+    {
     window.location.href="projet2.php"
+    }
 }
 
 document.getElementById("projet3").onclick=function() {clickProjet3()};
 function clickProjet3()
 {
+    $('html').fadeOut(1000);
+
+    window.setTimeout(click_function3, 1100);
+    function click_function3()
+    {
     window.location.href="projet3.php"
+    }
 }
 
 $("#apropos").click(function()

@@ -10,6 +10,42 @@
 
 </head>
     <body>
+
+    <?php
+
+            $x=0;
+            ini_set('error_reporting', E_ALL);
+            ini_set('display_errors', TRUE);
+            require_once('../db.php');
+            
+            $rqtProjets='SELECT logo FROM projets WHERE id=1';
+            $stmtProjets=$pdo->prepare($rqtProjets);
+            $rqtNom='SELECT nom FROM projets WHERE id=1';
+            $stmtNom=$pdo->prepare($rqtNom);
+            $rqtDesc='SELECT description FROM projets WHERE id=1';
+            $stmtDesc=$pdo->prepare($rqtDesc);
+
+
+            
+
+
+            
+            $stmtProjets->execute();
+            $result=$stmtProjets->fetch();
+            
+            $stmtNom->execute();
+            $nom=$stmtNom->fetch();
+            
+            $stmtDesc->execute();
+            $desc=$stmtDesc->fetch();
+                
+
+
+
+
+         ?>
+
+
         <header name = "header">
             
             <p id="blaze">
@@ -43,18 +79,13 @@
         </div>
 
         <div id="nom-projet">
-        Nom_Projet_1
+        <?php echo $nom['nom'];?>
        </div>
 
        <p id="arrow"><i id="left"></i><i id="right"></i><p>
        
 
-       <p id="desc-projet">Description du projet n°1 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-           Quaerat neque numquam blanditiis accusantium consequuntur, fuga eligendi officiis, vitae distinctio assumenda perferendis 
-           epellendus possimus iure beatae sint! Itaque placeat beatae illum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cumque dolorem aperiam, est at laboriosam, 
-            officiis, perspiciatis corporis earum voluptatum quia cum illo.
-            Dolorem reiciendis, provident rerum ducimus quis officiis!</p>
+       <p id="desc-projet"><?php echo $desc['description'] ?></p>
 
         
         <div id="buttons-contener">
